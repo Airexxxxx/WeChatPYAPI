@@ -14,7 +14,7 @@
 
 ## 使用教程
 
-1. 克隆该项目
+1. 克隆该项目<span style="color: red">（请关闭你的杀毒软件，否则可能会误删dll文件）</span>
 2. 选择对应python解释器环境（如果你是32位的python，请打开32位文件夹）
 3. 目前已支持最新版的微信版本，使用前请先把你的微信升级到最新版即3.3.0.115
 4. 执行文件夹中的demo.py
@@ -250,6 +250,13 @@ class WeChatPYApi(builtins.object)
  |      :param to_wx: @人的微信ID
  |      :param name: @人的微信昵称
  |      :param msg: 文本消息
+ |      :return: 无
+ |  
+ |  send_xml(self, self_wx, to_wx, xml_str)
+ |      发送xml信息
+ |      :param self_wx:
+ |      :param to_wx:
+ |      :param xml_str:
  |      :return: 无
  |  
  |  start_wx(self, path=None)
